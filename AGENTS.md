@@ -37,6 +37,7 @@ Build a simple family messenger, especially for Lolo and Lola and other family m
 - Give step-by-step instructions and small sample code snippets the user can apply themselves. For each step, explain what to do, where it goes, why it matters, and how to verify that it worked.
 - Keep edits to project files and folder setup under the user's control. Modify files, install dependencies, or run commands that change the project only when the user explicitly asks for that action. Keep authorized changes within the requested scope.
 - Start each lesson from the user's current progress. Break larger tasks into stages that can be completed and verified independently.
+- Give a detailed explanation in every phase. Explain what each new file, command, or important code block does, why it is needed in Messenger for Fam, where to use it, and what result confirms it worked. Use small examples and explain unfamiliar terms in clear Taglish.
 - After each significant phase has been completed and verified, suggest a concise Git commit message that describes the changes, before moving on to the next phase. Create the commit only when the user explicitly asks.
 
 ## Learning sequence
