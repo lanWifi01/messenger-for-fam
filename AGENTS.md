@@ -7,7 +7,7 @@ Build a simple family messenger, especially for Lolo and Lola and other family m
 ## Initial scope
 
 - Support web, desktop, and phone.
-- Use PostgreSQL for the database, Node.js for the backend, and React for the frontend.
+- Use PostgreSQL for the database, Express on Node.js for the backend, and React for the frontend.
 - Give each family member an account with a dedicated username, email address, and password.
 - Support three account roles: exactly one Superadmin, an Admin role, and regular Users (family members).
 - Support real-time messaging, voice calls, and video calls.
@@ -40,11 +40,17 @@ Build a simple family messenger, especially for Lolo and Lola and other family m
 - Give a detailed explanation in every phase. Explain what each new file, command, or important code block does, why it is needed in Messenger for Fam, where to use it, and what result confirms it worked. Use small examples and explain unfamiliar terms in clear Taglish.
 - After each significant phase has been completed and verified, suggest a concise Git commit message that describes the changes, before moving on to the next phase. Create the commit only when the user explicitly asks.
 
+## Current project checkpoint
+
+- Restart the implementation lessons from the existing backend and frontend setup. Reuse both parts of the project.
+- The user plans to remove the draft users migration. Leave migration changes to the user unless they explicitly ask for help editing the files. Revisit PostgreSQL migrations when the database work resumes.
+- Wait for the user to specify the next implementation step.
+
 ## Learning sequence
 
 1. **Planning** — Define the family members' main tasks, the simplest screens, permissions for each account role, the architecture, and the order in which to build features.
 2. **Database setup** — Set up PostgreSQL locally, model users, conversations, and messages, and introduce migrations and database constraints.
-3. **Backend setup** — Set up Node.js, implement account authentication and conversation permissions, then build messaging and the signaling needed for calls.
+3. **Backend setup** — Set up Express on Node.js. Explain how Express routes map HTTP requests to handlers and how middleware handles shared steps such as validation and authentication. Then implement account authentication, conversation permissions, messaging, and call signaling.
 4. **Frontend setup** — Build the React interface, connect it to the backend, and verify messaging and calls on the intended devices. Choose desktop and phone delivery approaches during planning.
 5. **Deployment** — Explain how to deploy the application and database securely, verify the main flows in the deployed environment, and cover basic monitoring and backups.
 
